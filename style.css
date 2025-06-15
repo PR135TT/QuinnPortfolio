@@ -1,0 +1,139 @@
+/* Base Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Pane 1 - Hero Section */
+#pane1 {
+  height: 500px;
+  background-color: #e0f7fa; /* Light teal */
+  padding: 40px;
+  position: relative;
+}
+
+#pane1 h1 {
+  font-size: 40px;
+  color: #004d40;
+}
+
+#pane1 #flex {
+  display: flex;
+  align-items: center;
+}
+
+#pane1 .line {
+  margin-left: 20px;
+  margin-top: 28px;
+  height: 4px;
+  width: 50%;
+  background-color: #004d40;
+  border: none;
+}
+
+#pane1 h2 {
+  padding-top: 20px;
+  font-size: 22px;
+  color: #00695c;
+}
+
+#pane1 img {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  width: 320px;
+  height: auto;
+}
+
+/* Pane 2 - About + Skills */
+#pane2 {
+  color: #ffffff;
+  height: auto;
+  padding: 40px;
+  background-color: #263238; /* Dark Blue Gray */
+}
+
+#pane2 h1, h3 {
+  padding-left: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#pane2 .line {
+  height: 4px;
+  width: 50%;
+  background-color: #4dd0e1;
+  border: none;
+  margin: 20px 0 30px 10px;
+}
+
+#pane2 img {
+  float: right;
+  width: 300px;
+  height: auto;
+  margin-left: 20px;
+}
+
+#flex1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#flex1 h1 {
+  color: #ffffff;
+}
+
+#flex1 .line2 {
+  height: 4px;
+  width: 50%;
+  background-color: #4dd0e1;
+  border: none;
+  margin: 10px 0 20px 10px;
+}
+
+#pane2 ul {
+  padding-left: 30px;
+  list-style: square;
+  line-height: 1.8;
+  color: #cfd8dc;
+}
+
+/* Pane 3 - Contact Section */
+#pane3 {
+  height: auto;
+  padding: 40px;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+#pane3 h1 {
+  padding-top: 10px;
+  font-size: 32px;
+  color: #004d40;
+}
+
+#pane3 p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#pane3 img {
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+}
