@@ -7,6 +7,17 @@ body {
   background-color: #f9f9f9;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 2s ease-out;
+}
 
 h1, h2, h3 {
   margin: 0;
@@ -126,12 +137,13 @@ a:hover {
   padding-left: 30px;
   list-style: none;
   line-height: 1.8;
-  color: #cfd8dc;
+  color: white;
   justify-content:space-between;
 }
 
 #pane2 ul li {
-	font-weight:bold;
+	color:white;
+	font-weight:1000;
 	font-size:12px;
 }
 
@@ -227,9 +239,14 @@ a:hover {
   }
   
   #pane2 ul li {
-	  font-weight:bold;
-	  font-size:15px;
+	  font-size:18px;
   }
+  
+  
+  #pane2 ul li .text {
+	  font-weight:1000;!important
+  }
+  
 
   .skill {
     display: block;
