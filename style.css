@@ -6,6 +6,7 @@ body {
   background-color: #f9f9f9;
 }
 
+
 h1, h2, h3 {
   margin: 0;
 }
@@ -63,7 +64,7 @@ a:hover {
 /* Pane 2 - About + Skills */
 #pane2 {
   color: #ffffff;
-  height: auto;
+  height: 500px;
   padding: 40px;
   background-color: #263238; /* Dark Blue Gray */
 }
@@ -106,11 +107,48 @@ a:hover {
   margin: 10px 0 20px 10px;
 }
 
-#pane2 ul {
+#pane2 img {
+	margin-top:20%;
+	height:auto;
+	width:180px;
+	transition:transform 1s ease-in-out;
+	animation: Pulse 5s ease-in-out 0s 10;
+}
+
+#pane2 img:hover {
+	overflow:hidden;
+	transition:transform 1s ease-in-out;
+	transform:scale(1.2);
+}
+
+@keyframes Pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+#pane2 ul {	
+  margin:auto;
   padding-left: 30px;
-  list-style: square;
+  list-style: none;
   line-height: 1.8;
   color: #cfd8dc;
+  justify-content:space-between;
+}
+
+#pane2 ul li {
+	font-size:13px;
+}
+
+.skill {
+	display:inline-block;
+	padding:10px;
+	justify-content:space-between;
+	font-size:11px;
+	margin:auto;
 }
 
 /* Pane 3 - Contact Section */
@@ -137,3 +175,91 @@ a:hover {
   height: auto;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  #pane1, #pane2, #pane3 {
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  #pane1 h1 {
+    font-size: 28px;
+  }
+
+  #pane1 h2 {
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  #pane1 #flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #pane1 .line {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #pane1 img {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 280px;
+  }
+
+  #pane2 h1, #pane2 h3 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #pane2 .line, #pane2 .line2 {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  #pane2 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .skill {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #pane2 img {
+    margin-top:20px;
+    display: block;
+    width: 60%;
+    max-width: 180px;
+    animation: Pulse 5s ease-in-out 0s 10;
+  }
+
+  #pane3 h1 {
+    font-size: 24px;
+  }
+
+  #pane3 p {
+    font-size: 16px;
+  }
+
+  #pane3 img {
+    width: 80%;
+    max-width: 280px;
+    margin: auto;
+  }
+}
+
